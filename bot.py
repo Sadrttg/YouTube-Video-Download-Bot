@@ -1,14 +1,14 @@
 
-# ©️ LISA-KOREA | @LISA_FAN_LK | NT_BOT_CHANNEL
+# ©️ sww80 | @sww80 | xvx557
 from pyrogram import Client, filters
 from pytube import YouTube
 import asyncio
 
 # Replace 'YOUR_API_ID', 'YOUR_API_HASH', and 'YOUR_BOT_TOKEN' with your actual values
 
-API_ID = ''
-API_HASH = ''
-BOT_TOKEN = ''
+API_ID = '27285563'
+API_HASH = 'b236408e824fdfc2aa90812b338843cb'
+BOT_TOKEN = '7039124106:AAGBNlM7vrCwS2MZw9A1n1yfTdOIHVVrRHA'
 
 # Create a Pyrogram client
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
@@ -58,7 +58,7 @@ async def process_youtube_link(client, message):
         await uploading_msg.delete()
 
         # Send successful upload message
-        await message.reply_text("\n\nOWNER : @LISA_FAN_LK 💕\n\nSUCCESSFULLY UPLOADED!")
+        await message.reply_text("\n\nمطور البوت : @sww80 \n\nتم التحميل بنجاح !")
 
     except Exception as e:
         error_text = 'Error: Failed to process the YouTube link. Please make sure the link is valid and try again.'
